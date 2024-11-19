@@ -51,6 +51,7 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .anime-item img {
@@ -69,11 +70,14 @@ h1 {
 .anime-item p {
   font-size: 1rem;
   color: #7f8c8d;
+  margin-top: 7px;
 }
 
+/* Contoh hover effect dengan transisi */
 .anime-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Membesar sedikit pada hover */
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .anime-item:active {
@@ -89,6 +93,10 @@ h1 {
 }
 
 @media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
   .anime-item {
     width: 45%; /* 2 card per baris di perangkat mobile kecil */
     font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
